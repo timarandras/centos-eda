@@ -1,0 +1,3 @@
+#!/bin/bash
+
+x11docker --xpra --gpu --clipboard --lang="hu_HU" --home="" --sudouser --dbus --cap-default --  --  centos-eda xterm
