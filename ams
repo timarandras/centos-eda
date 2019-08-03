@@ -1,0 +1,5 @@
+#!/bin/bash
+
+export MGC_AMS_HOME=/home/timar/amsv/amsv/
+export PATH=$MGC_AMS_HOME/bin:$MGC_AMS_HOME/modeltech/bin:$PATH
+export MGLS_LICENSE_FILE=1717@10.0.30.1
