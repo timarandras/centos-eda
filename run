@@ -1,3 +1,7 @@
 #!/bin/bash
 
-x11docker --xpra --gpu --clipboard --lang="hu_HU" --home="" --sudouser --dbus --cap-default -- -v /home/timar/eda:/eda --  centos-eda xterm
+# XPRA
+# x11docker --xpra --gpu --clipboard --lang="hu_HU" --home="" --sudouser --dbus --cap-default -- -v /home/timar/eda:/eda --  centos-eda $*
+
+# HOST DISPLAY
+x11docker --hostdisplay --gpu --clipboard --lang="hu_HU" --home="" --sudouser --dbus --cap-default -- -v /home/timar/eda:/eda --  centos-eda $*
