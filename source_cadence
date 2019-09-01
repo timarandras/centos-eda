@@ -6,9 +6,10 @@ export LM_LICENSE_FILE=5280@10.0.30.1:1717@10.0.30.1
 export OA_UNSUPPORTED_PLAT=linux_rhel60
 export AMS_DIR=/eda/ams/410
 export AMS_DB=cds
-export IUSDIR=.
+export IUSDIR=/eda/cadence/2018-19/RHELx86/INCISIVE_15.20.058
 
 source /eda/cadence/2018-19/scripts/SPECTRE_18.10.077_RHELx86.sh
+source /eda/cadence/2018-19/scripts/INCISIVE_15.20.058_RHELx86.sh
 source /eda/cadence/2018-19/scripts/EXT_19.11.000_RHELx86.sh
 source /eda/cadence/2018-19/scripts/IC_6.1.8.000_RHELx86.sh
 source /eda/cadence/2018-19/scripts/ASSURA_04.16.001_618_RHELx86.sh
