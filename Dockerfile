@@ -38,8 +38,10 @@ RUN yum install -y \
         motif.i686 \
         numactl-libs \
         openmotif \
+        psmisc \
         sssd-client.i686 \
         tcsh \
+        tk \
         xdpyinfo \
         xorg-x11-fonts-misc \
         xterm \

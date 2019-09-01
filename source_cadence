@@ -4,10 +4,14 @@ export CDS_LIC_FILE=5280@10.0.30.1
 export MGLS_LICENSE_FILE=1717@10.0.30.1
 export LM_LICENSE_FILE=5280@10.0.30.1:1717@10.0.30.1
 export OA_UNSUPPORTED_PLAT=linux_rhel60
+export AMS_DIR=/eda/ams/410
+export AMS_DB=cds
+export IUSDIR=.
 
 source /eda/cadence/2018-19/scripts/SPECTRE_18.10.077_RHELx86.sh
 source /eda/cadence/2018-19/scripts/EXT_19.11.000_RHELx86.sh
 source /eda/cadence/2018-19/scripts/IC_6.1.8.000_RHELx86.sh
 source /eda/cadence/2018-19/scripts/ASSURA_04.16.001_618_RHELx86.sh
 
+export PATH=$PATH:$AMS_DIR/cds/bin:$AMS_DIR/programs/bin
 
