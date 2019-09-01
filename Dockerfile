@@ -45,7 +45,8 @@ RUN yum install -y \
         xdpyinfo \
         xorg-x11-fonts-misc \
         xterm \
-        zlib
+        zlib \
+        which
 
 #Install glib2.686, first an update is needed 
 RUN yum -y update glib2
