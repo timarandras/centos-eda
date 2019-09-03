@@ -1,8 +1,8 @@
 #!/bin/bash
 
-export CDS_LIC_FILE=5280@10.0.30.1
+export CDS_LIC_FILE=5280@10.0.30.1:5280@10.0.30.254
 export MGLS_LICENSE_FILE=1717@10.0.30.1
-export LM_LICENSE_FILE=5280@10.0.30.1:1717@10.0.30.1
+export LM_LICENSE_FILE=5280@10.0.30.1:1717@10.0.30.1:1800@10.0.30.1
 export OA_UNSUPPORTED_PLAT=linux_rhel60
 export AMS_DIR=/eda/ams/410
 export AMS_DB=cds
@@ -10,9 +10,17 @@ export IUSDIR=/eda/cadence/2018-19/RHELx86/INCISIVE_15.20.058
 
 source /eda/cadence/2018-19/scripts/SPECTRE_18.10.077_RHELx86.sh
 source /eda/cadence/2018-19/scripts/INCISIVE_15.20.058_RHELx86.sh
+source /eda/cadence/2018-19/scripts/CONFRML_18.10.200_RHELx86.sh
+source /eda/cadence/2018-19/scripts/INNOVUS_18.10.000_RHELx86.sh
+source /eda/cadence/2018-19/scripts/GENUS_18.10.000_RHELx86.sh
+source /eda/cadence/2018-19/scripts/SSV_18.10.000_RHELx86.sh
+source /eda/cadence/2018-19/scripts/MODUS_18.10.000_RHELx86.sh
+source /eda/cadence/2018-19/scripts/PVS_16.12.000_RHELx86.sh
 source /eda/cadence/2018-19/scripts/EXT_19.11.000_RHELx86.sh
+source /eda/cadence/2018-19/scripts/MVS_18.10.000_RHELx86.sh
 source /eda/cadence/2018-19/scripts/IC_6.1.8.000_RHELx86.sh
 source /eda/cadence/2018-19/scripts/ASSURA_04.16.001_618_RHELx86.sh
+source /eda/cadence/2018-19/scripts/XCELIUM_18.03.010_RHELx86.sh
 
 export PATH=$PATH:$AMS_DIR/cds/bin:$AMS_DIR/programs/bin
 
