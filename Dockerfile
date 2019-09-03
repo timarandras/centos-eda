@@ -39,6 +39,8 @@ RUN yum install -y \
         numactl-libs \
         openmotif \
         psmisc \
+        redhat-lsb \
+        redhat-lsb.i686 \
         sssd-client.i686 \
         tcsh \
         tk \
