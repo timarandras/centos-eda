@@ -57,4 +57,5 @@ RUN yum install -y \
         xterm \
         zlib \
         which \
+        evince \
         /tmp/labview-2011-rte-11.0.1-2.i386.rpm
