@@ -1,4 +1,7 @@
 FROM centos
+
+COPY labview-2011-rte-11.0.1-2.i386.rpm /tmp/
+
 RUN yum install -y \
         bind-utils \
         bzip2-libs.i686 \
@@ -53,6 +56,5 @@ RUN yum install -y \
         xorg-x11-fonts-misc \
         xterm \
         zlib \
-        which
-
-#CMD /usr/bin/xterm
+        which \
+        /tmp/labview-2011-rte-11.0.1-2.i386.rpm
