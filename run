@@ -5,5 +5,3 @@
 
 # HOST DISPLAY
 x11docker -q --hostdisplay --gpu --clipboard --lang="hu_HU" --home="" --sudouser --dbus --cap-default -i -- -v /eda:/eda -- centos-eda $*
-#Peti
-#x11docker --hostdisplay --gpu --clipboard --lang="hu_HU" --home="" --user=root --dbus --cap-default --share ~/Programs/ANSYS -i centos-eda

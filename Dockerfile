@@ -2,6 +2,9 @@ FROM centos
 RUN yum install -y \
         bind-utils \
         bzip2-libs.i686 \
+        compat-gcc-44 \
+        compat-gcc-44-c++ \
+        compat-libstdc++-33 \
         dbus \
         dos2unix \
         elfutils-libelf.i686 \
@@ -10,6 +13,7 @@ RUN yum install -y \
         gcc-c++ \
         gdb \
         glib2 \
+        glib2.i686 \
         glibc-devel \
         glibc-devel.i686 \
         glibc.i686 \
@@ -38,6 +42,7 @@ RUN yum install -y \
         motif.i686 \
         numactl-libs \
         openmotif \
+        openssh-clients \
         psmisc \
         redhat-lsb \
         redhat-lsb.i686 \
@@ -49,9 +54,5 @@ RUN yum install -y \
         xterm \
         zlib \
         which
-
-#Install glib2.686, first an update is needed 
-RUN yum -y update glib2
-RUN yum -y install glib2.i686
 
 #CMD /usr/bin/xterm

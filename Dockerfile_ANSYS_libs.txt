@@ -1,0 +1,33 @@
+#ANSYS 19.3 libs for CentOs 7.6
+FROM centos
+RUN yum install -y \
+        #contains the necessary libjpeg.so.62
+        libjpeg-turbo \
+        libjpeg-turbo.i686 \
+        #glib2.x86_64 was needed to be installed before the i686 
+        glib2 \
+        glib2.i686
+        openmotif \
+        compat-gcc-44 \
+        compat-gcc-44-c++ \
+        compat-libstdc++-33 \
+        zlib \
+        libXp \
+        libXp.i686 \
+        libpng12 \
+        libpng12.i686 \
+        sssd-client.i686 \
+        libXxf86vm.i686 \
+        libXft.i686 \
+        libtiff.i686 \
+        libpng.i686 \
+        bzip2-libs.i686 \
+        glibc.i686 \
+#other
+        #needed for the install process
+        which \
+        #needed fo fluent
+        openssh-clients
+        mesa-dri-drivers \ 
+        xterm \
+        mc
