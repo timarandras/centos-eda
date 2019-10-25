@@ -59,6 +59,7 @@ RUN yum install -y \
         which \
         evince \
         /tmp/labview-2011-rte-11.0.1-2.i386.rpm \
-        https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+        https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm \
+        geany
 
 RUN yum install -y exo
