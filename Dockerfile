@@ -60,10 +60,10 @@ RUN yum install -y \
         evince \
         /tmp/labview-2011-rte-11.0.1-2.i386.rpm \
         https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm \
-        geany
-        apr
-        apr-util
-        libdb4
+        geany \
+        apr \
+        apr-util \
+        libdb4 \
         exo
 
 RUN ln -s /usr/lib64/libdb-4.8.so /usr/lib64/libdb-4.7.so
