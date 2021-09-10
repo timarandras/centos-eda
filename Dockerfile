@@ -62,8 +62,7 @@ RUN yum install -y \
         https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm \
         geany \
         apr \
-        apr-util \
-        libdb4 \
-        exo
+        apr-util
 
+RUN yum install -y libdb4 exo
 RUN ln -s /usr/lib64/libdb-4.8.so /usr/lib64/libdb-4.7.so
